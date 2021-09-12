@@ -1,4 +1,4 @@
-// import "../styles/styles.css";
+import "../styles/styles.css";
 // import "lazysizes";
 // import MobileMenu from './modules/MobileMenu.js';
 // import RevealOnScroll from "./modules/RevealOnScroll";
