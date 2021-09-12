@@ -1,0 +1,12 @@
+.btn{
+    color: white;
+    background-color: $Blue;
+    border-radius: 20px;
+    padding: 0.65rem 4rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover{
+        color: $Cyan;
+    }
+}

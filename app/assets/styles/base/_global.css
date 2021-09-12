@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 html{
@@ -9,6 +10,7 @@ html{
 }
 
 body{
-    background-color: $DarkBlueTwo;
-    color: white;
+    background-color: $DarkBlueOne;
+    width: 100%;
+    font-family: $FontFamilyNormal;
 }

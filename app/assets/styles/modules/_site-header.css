@@ -1,0 +1,49 @@
+.site-header{
+    width: 100%;
+    position: relative;
+    background-color: $DarkBlueOne;
+    font-family: $FontFamilySpecial;
+
+    &__nav-container{
+        padding: 1.5rem;
+        display: flex;
+        height: 10vh;
+    }
+
+    &__logo-container{
+        width: 40%;
+        height: auto;
+    }
+
+    &__logo{
+        width: 100%;
+        height: auto;
+    }
+
+    &__primary-nav{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        li{
+            padding-left: 1.5rem;
+        }
+
+        a{
+            text-decoration: none;
+            cursor: pointer;
+            color: rgba(255,255,255,0.7)
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
