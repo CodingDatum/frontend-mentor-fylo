@@ -4,5 +4,7 @@
 @import './modules/_wrapper';
 @import './base/_global';
 @import './modules/_button';
+@import './modules/_reveal-item';
 @import './modules/_site-header';
 @import './modules/_site-hero';
+@import './modules/_features-section';

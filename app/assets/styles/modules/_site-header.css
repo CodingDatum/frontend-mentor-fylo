@@ -31,7 +31,7 @@
             list-style: none;
         }
 
-        li{
+        li+li{
             padding-left: 1.5rem;
         }
 
