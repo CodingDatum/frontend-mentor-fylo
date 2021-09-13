@@ -11,7 +11,8 @@ html {
 
 body {
 	background-color: $DarkBlueOne;
-	width: 100%;
+	width: 100vw;
 	font-family: $FontFamilyNormal;
 	font-weight: 400;
+	overflow-x: hidden;
 }

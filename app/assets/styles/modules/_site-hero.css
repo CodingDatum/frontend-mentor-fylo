@@ -1,44 +1,47 @@
-.site-hero{
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: $FontFamilySpecial;
+.site-hero {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-family: $FontFamilySpecial;
 
-    &__hero-img{
-        width: 80%;
-        height: auto;
-        z-index: 2;
-        margin-bottom: 8vh;
-    }
+	&__hero-img {
+		width: 80%;
+		height: auto;
+		z-index: 2;
+		margin-bottom: 8vh;
+	}
 
-    &__content{
-        background-color: $DarkBlueTwo;
-        display: flex;
-        position: relative;
-        height: 100%;
-        width: 100%;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+	&__content {
+		background-color: $DarkBlueTwo;
+		display: flex;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-    &__bg-img{
-        position: absolute;
-        top: -95%;
-    }
+	&__bg-img {
+		position: absolute;
+		top: -95%;
+		width: 100%;
+	}
 
-    &__title{
-        color: white;
-        text-align: center;
-        z-index: 2;
-        background-color: $DarkBlueTwo;
-    }
+	&__title {
+		color: white;
+		text-align: center;
+		z-index: 2;
+		background-color: $DarkBlueTwo;
+		font-weight: 400;
+		font-size: 2.3rem;
+	}
 
-    &__text{
-        text-align: center;
-        line-height: 1.5rem;
-        width: 90%;
-    }
+	&__text {
+		text-align: center;
+		line-height: 1.5rem;
+		width: 90%;
+	}
 }
