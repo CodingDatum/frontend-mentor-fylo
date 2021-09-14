@@ -1,12 +1,13 @@
-.btn{
-    color: white;
-    background-color: $Blue;
-    border-radius: 20px;
-    padding: 0.65rem 4rem;
-    font-weight: bold;
-    cursor: pointer;
+.btn {
+	color: white;
+	background: linear-gradient(147deg, $Cyan, $Blue);
+	border-radius: 20px;
+	padding: 0.95rem 4rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 1s ease;
 
-    &:hover{
-        color: $Cyan;
-    }
+	&:hover {
+		background: linear-gradient(147deg, $Blue, $Cyan);
+	}
 }

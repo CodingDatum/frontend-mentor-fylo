@@ -1,0 +1,41 @@
+.early-access {
+	height: 100vh;
+	&__content-container {
+		background: linear-gradient(to bottom, $DarkBlueTwo, $DarkBlueFour);
+		box-shadow: 3px 3px 100px -15px black;
+		border-radius: 5px;
+		padding: 2rem 1.25rem;
+		width: 90%;
+		height: 60vh;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	&__email-input {
+		color: $DarkBlueTwo;
+		border: 5px solid $DarkBlueTwo;
+		background-color: white;
+		border-radius: 20px;
+		padding: 0.95rem 2.5rem;
+		font-weight: bold;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	&__email-input:active {
+		text-align: left;
+	}
+
+	&__email-input::placeholder {
+		color: $DarkBlueTwo;
+	}
+
+	&__description {
+		color: rgba(255, 255, 255, 0.75);
+		text-align: center;
+		line-height: 1.75rem;
+	}
+}

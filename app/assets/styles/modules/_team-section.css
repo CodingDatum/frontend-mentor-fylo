@@ -1,6 +1,5 @@
 .team-section {
 	width: 100%;
-	background-color: $DarkBlueTwo;
 
 	&__intro {
 		width: 100%;
@@ -34,6 +33,21 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		position: relative;
+	}
+
+	&__teammates-container::before {
+		position: absolute;
+		content: "";
+		z-index: 5;
+		background: url("../images/bg-quotes.png");
+		background-size: 90%;
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 30px;
+		height: 30px;
+		top: 18px;
+		left: 12%;
 	}
 
 	&__teammate-card {
