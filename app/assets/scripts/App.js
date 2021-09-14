@@ -7,6 +7,7 @@ import RevealOnScroll from "./modules/RevealOnScroll";
 // let stickyHeader = new StickyHeader();
 // let mobileMenu = new MobileMenu();
 new RevealOnScroll(document.querySelectorAll(".features-section__feature-card"), 60);
+new RevealOnScroll(document.querySelectorAll(".team-section__teammate-card"), 60);
 // new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 // let modal;
 
