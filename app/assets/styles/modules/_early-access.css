@@ -42,6 +42,7 @@
 		@mixin atMedium {
 			width: 100%;
 			flex-direction: row;
+			justify-content: center;
 		}
 	}
 
@@ -56,7 +57,7 @@
 		margin-bottom: 2rem;
 
 		@mixin atMedium {
-			width: 80%;
+			width: 60%;
 			margin-bottom: none;
 			margin-right: 1.5rem;
 		}
@@ -67,7 +68,7 @@
 	}
 
 	&__description {
-		color: rgba(255, 255, 255, 0.75);
+		color: white;
 		text-align: center;
 		line-height: 1.75rem;
 	}
