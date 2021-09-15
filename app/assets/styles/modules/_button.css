@@ -10,4 +10,11 @@
 	&:hover {
 		background: linear-gradient(147deg, $Blue, $Cyan);
 	}
+
+	@mixin atMedium {
+		&.early-access__button {
+			height: 52.6px;
+			padding: 0.95rem 1rem;
+		}
+	}
 }

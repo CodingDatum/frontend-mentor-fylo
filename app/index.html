@@ -25,6 +25,7 @@
       font-size: 11px;
       text-align: center;
       margin-top:100px;
+      background-color: hsl(216, 53%, 9%);
     }
 
     .attribution a {
@@ -97,13 +98,17 @@
   <div class="team-section section-padding">
 
     <div class="team-section__intro wrapper">
-      <img class="team-section__img" src="assets/images/illustration-stay-productive.png" alt="people simultaneously working with different files">
-      <h2 class="team-section__title">Stay productive, wherever you are</h2>
-      <p class="team-section__description">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
-      <p class="team-section__description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
-      <p>
-        <a>See how Fylo works <img src="assets/images/icon-arrow.svg" alt="an arrow icon pointing towards your future with Fylo"></a>
-      </p>
+      <div class="team-section__img-container">
+        <img class="team-section__img" src="assets/images/illustration-stay-productive.png" alt="people simultaneously working with different files">
+      </div>
+      <div class="team-section__intro-container">
+        <h2 class="team-section__title">Stay productive, wherever you are</h2>
+        <p class="team-section__description">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+        <p class="team-section__description">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+        <p>
+          <a>See how Fylo works <img src="assets/images/icon-arrow.svg" alt="an arrow icon pointing towards your future with Fylo"></a>
+        </p>
+      </div>
     </div>
 
     <div class="team-section__teammates-container wrapper">
@@ -156,8 +161,10 @@
       <h2 class="early-access__title">Get early access today</h2>
       <p class="early-access__description">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
         questions, our support team would be happy to help you.</p>
-      <input class="early-access__email-input" type="text" placeholder="email@example.com">
-      <button class="btn">Get Started For Free</button>
+      <div class="early-access__email-container">
+        <input class="early-access__email-input" type="text" placeholder="email@example.com">
+        <button class="btn early-access__button">Get Started For Free</button>
+      </div>
     </div>
   </div>
 
@@ -167,40 +174,46 @@
       <img class="contact-section__logo" src="assets/images/logo.svg" alt="company logo" srcset="">
     </div>
 
-    <div class="contact-section__basic-info wrapper">
-      <div class="contact-section__basic-info__contact-info">
-        <img class="contact-section__basic-info__icon" src="assets/images/icon-location.svg" alt="location icon" srcset="">
-        <p class="contact-section__basic-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua</p>
+    <div class="contact-section__container">
+
+      <div class="contact-section__basic-info wrapper">
+        <div class="contact-section__basic-info__contact-info">
+          <img class="contact-section__basic-info__icon" src="assets/images/icon-location.svg" alt="location icon" srcset="">
+          <p class="contact-section__basic-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        </div>
+  
+        <div class="contact-section__basic-info__contact-info">
+          <img class="contact-section__basic-info__icon" src="assets/images/icon-phone.svg" alt="phone icon" srcset="">
+          <p class="contact-section__basic-info__description">+1-543-123-4567</p>
+        </div>
+  
+        <div class="contact-section__basic-info__contact-info">
+          <img class="contact-section__basic-info__icon" src="assets/images/icon-email.svg" alt="email icon" srcset="">
+          <p class="contact-section__basic-info__description">example@fylo.com</p>
+        </div>
       </div>
-
-      <div class="contact-section__basic-info__contact-info">
-        <img class="contact-section__basic-info__icon" src="assets/images/icon-phone.svg" alt="phone icon" srcset="">
-        <p class="contact-section__basic-info__description">+1-543-123-4567</p>
-      </div>
-
-      <div class="contact-section__basic-info__contact-info">
-        <img class="contact-section__basic-info__icon" src="assets/images/icon-email.svg" alt="email icon" srcset="">
-        <p class="contact-section__basic-info__description">example@fylo.com</p>
-      </div>
-    </div>
-
-    <div class="contact-section__contact-links section-padding">
-
-      <ul class="contact-section__contact-links__list wrapper">
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Jobs</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Blog</a></li>
-        <li class="contact-section__contact-links--m-top"><a href="#">Contact Us</a></li>
-        <li><a href="#">Terms</a></li>
-        <li><a href="#">Privacy</a></li>
-      </ul>
-
-      <div class="contact-section__social-icons">
-        <img class="contact-section__social-icon" src="assets/images/facebook-icon.png" alt="facebook icon">
-        <img class="contact-section__social-icon" src="assets/images/twitter-icon.jfif" alt="twitter icon">
-        <img class="contact-section__social-icon" src="assets/images/instagram-icon.jfif" alt="instagram icon">
+  
+      <div class="contact-section__contact-links section-padding--small-screen">
+  
+        <ul class="contact-section__contact-links__list wrapper">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul class="contact-section__contact-links__list wrapper contact-section__contact-links--m-top">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+  
+        <div class="contact-section__social-icons">
+          <img class="contact-section__social-icon" src="assets/images/facebook-icon.png" alt="facebook icon">
+          <img class="contact-section__social-icon" src="assets/images/twitter-icon.jfif" alt="twitter icon">
+          <img class="contact-section__social-icon" src="assets/images/instagram-icon.jfif" alt="instagram icon">
+        </div>
+  
       </div>
 
     </div>

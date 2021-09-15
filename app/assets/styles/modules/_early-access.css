@@ -1,5 +1,6 @@
 .early-access {
 	height: 100vh;
+
 	&__content-container {
 		background: linear-gradient(to bottom, $DarkBlueTwo, $DarkBlueFour);
 		box-shadow: 3px 3px 100px -15px black;
@@ -12,6 +13,36 @@
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
+
+		@mixin atMedium {
+			width: 75%;
+			padding: 2rem 3rem;
+			position: relative;
+			height: 45vh;
+		}
+	}
+
+	&__title {
+		@mixin atMedium {
+			font-size: 2rem;
+		}
+	}
+
+	&__description {
+		@mixin atMedium {
+			width: 80%;
+			color: white;
+		}
+	}
+
+	&__email-container {
+		display: flex;
+		flex-direction: column;
+
+		@mixin atMedium {
+			width: 100%;
+			flex-direction: row;
+		}
 	}
 
 	&__email-input {
@@ -21,12 +52,14 @@
 		border-radius: 20px;
 		padding: 0.95rem 2.5rem;
 		font-weight: bold;
-		cursor: pointer;
 		text-align: center;
-	}
+		margin-bottom: 2rem;
 
-	&__email-input:active {
-		text-align: left;
+		@mixin atMedium {
+			width: 80%;
+			margin-bottom: none;
+			margin-right: 1.5rem;
+		}
 	}
 
 	&__email-input::placeholder {

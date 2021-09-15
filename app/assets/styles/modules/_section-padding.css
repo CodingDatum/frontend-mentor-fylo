@@ -1,5 +1,12 @@
 .section-padding {
 	padding-top: 5rem;
+
+	&--small-screen {
+		padding-top: 5rem;
+		@mixin atMedium {
+			padding-top: 0;
+		}
+	}
 }
 
 .less-padding {

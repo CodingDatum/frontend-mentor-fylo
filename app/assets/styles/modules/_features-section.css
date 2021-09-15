@@ -5,9 +5,22 @@
 	justify-content: space-evenly;
 	align-items: center;
 
+	@mixin atMedium {
+		width: 80%;
+		margin: 10rem auto 0;
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(2, 50%);
+		grid-column-gap: 20px;
+	}
+
 	&__feature-card {
 		text-align: center;
 		height: 40vh;
+
+		@mixin atMedium {
+			padding: 6rem;
+		}
 	}
 
 	&__card-description {

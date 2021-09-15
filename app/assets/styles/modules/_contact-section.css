@@ -1,7 +1,19 @@
 .contact-section {
+	background-color: $DarkBlueThree;
+	padding: 2rem 0;
+
+	@mixin atMedium {
+		padding: 8rem;
+		margin-bottom: -100px;
+	}
+
 	&__logo-container {
 		width: 60%;
 		height: auto;
+
+		@mixin atMedium {
+			width: 30%;
+		}
 	}
 
 	&__logo {
@@ -9,14 +21,45 @@
 		height: auto;
 	}
 
+	&__container {
+		@mixin atMedium {
+			display: flex;
+			align-items: flex-start;
+			margin-top: 2rem;
+		}
+	}
+
 	&__basic-info {
 		width: 100%;
 		margin-top: 2rem;
+
+		@mixin atMedium {
+			flex-basis: 60%;
+			margin-top: 0;
+		}
 	}
 
 	&__basic-info__contact-info {
 		margin-top: 1rem;
 		display: flex;
+
+		@mixin atMedium {
+			margin-top: 0;
+		}
+	}
+
+	&__basic-info__contact-info:first-child {
+		@mixin atMedium {
+			float: left;
+			width: 60%;
+			margin-right: 10px;
+		}
+	}
+
+	&__basic-info__contact-info:last-child {
+		@mixin atMedium {
+			margin-top: 2rem;
+		}
 	}
 
 	&__basic-info__icon {
@@ -34,8 +77,18 @@
 
 	/* THIS IS WHERE THE LINKS APPEAR */
 	&__contact-links {
+		@mixin atMedium {
+			flex-basis: 40%;
+			width: 100%;
+			display: flex;
+		}
+
 		&--m-top {
 			padding-top: 30px;
+
+			@mixin atMedium {
+				padding-top: 0;
+			}
 		}
 	}
 	&__contact-links__list {
@@ -48,6 +101,10 @@
 		a {
 			text-decoration: none;
 		}
+
+		@mixin atMedium {
+			width: 200px;
+		}
 	}
 
 	&__social-icons {
@@ -56,6 +113,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@mixin atMedium {
+			margin-top: 0;
+			height: max-content;
+		}
 	}
 
 	&__social-icon {
